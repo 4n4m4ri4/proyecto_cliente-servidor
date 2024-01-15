@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import "bourbon";
+
+.container{
+  padding: 30px;
+  max-width: 850px;
+  margin: 40px auto;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 5px rgba(19, 35, 47, 0.3);
+}
+.wrapper {	
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align:center;
+  align-items:center;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+  
+}
+.form-signin-heading{
+	text-align:center;
+	font-weight:bold;
+}
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.checkbox {
+	  margin-left:20px;
+	  font-weight: normal;
+	  font-size:16px;
+	}
+
+	.form-control {
+
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+	}
+.form-control:focus {
+		  z-index: 2;
+		
+}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+
+
+.botonCuenta{
+	width:250px;
+	margin:0 auto;
+	text-align:center;
+	background-color:#ee9f9f;
+	font-size:16px;
+	color:white;
+}
+.botonCuenta:hover{
+	background-color:#eaeaea;
+	color:gray;
+}
+

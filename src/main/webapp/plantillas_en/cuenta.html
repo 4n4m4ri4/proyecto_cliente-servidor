@@ -1,0 +1,40 @@
+
+<meta charset="UTF-8">
+<title>My Account</title>
+
+ <link rel="stylesheet" href="css/cuenta.css">
+
+
+<div class="container">
+<div style="float:left;">
+<div class="wrapper">
+    <form id="form_login" class="form-signin" >       
+      <h2 class="form-signin-heading">Log in</h2>
+      <input type="email" class="form-control" name="emailLogin" id="emailLogin" placeholder="Email "  /><br>
+      <input type="password" class="form-control" name="contrasenaLogin" id="contrasenaLogin" placeholder="Password" />  <br>    
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="recordarDatos" name="recordarDatos"> Remember
+      </label>
+      <button class="btn  botonCuenta" type="submit" id="Identificarme">Login</button>   
+    </form>
+  </div>
+</div>
+
+<div style="float:right;">
+<div class="wrapper">
+    <form id="form_registro_usuario" class="form-signin">       
+      <h2 class="form-signin-heading">Register</h2>
+      <input type="text" class="form-control" name="nombre" id="nombre"  placeholder="Name" /><br>
+       <input type="text" class="form-control" name="apellidos" id="apellidos"  placeholder="Surnames" /><br>
+      <input type="number" class="form-control" name="edad" id="edad"  placeholder="Age" min="1" max="100" style="width:100px;"/> <br>  
+      <input type="email" class="form-control" name="email" id="email"  placeholder="Email" />  <br>  
+      <input type="password" class="form-control" name="contrasena" id="contrasena"  placeholder="Password" /> <br>
+      <p style="font-size:14px;">Photo (Optional)</p>
+       <input type="file" name="foto" id="foto" ><br>
+      
+      <button style="margin-left:30px;" class="btn botonCuenta" type="submit" id="Registrarme">Register</button>   
+    </form>
+  </div>
+</div>
+</div>
+

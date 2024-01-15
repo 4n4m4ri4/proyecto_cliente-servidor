@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Detalles</title>
+</head>
+<link href="img/favicon.ico" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+<link href="css/detalleProducto.css" rel="stylesheet" />
+<body>
+
+
+<div class="container mt-5 mb-5">	
+<div class="card">
+	
+<div class="row g-0">	
+<div class="col-md-6 border-end">	
+<div class="d-flex flex-column justify-content-center">	
+<div class="main_image">	
+{{#.}}
+
+<object class="zoom" data="subidas/{{id}}.jpg?fai={{fechaImagenPortada}}" id="main_product_image" width="350">
+<img class="zoom"  src="subidas/imagen_defecto.jpg"  width="350"/></object>
+
+</div>
+<div class="thumbnail_images">	
+
+<ul id="thumbnail">	
+<li><object onclick="changeImage(this)" data="subidas/{{id}}.jpg?fai={{fechaImagenPortada}}" width="70">
+<img onclick="changeImage(this)"  src="subidas/imagen_defecto.jpg" width="70"/></object></li>
+<li><object  onclick="changeImage(this)" id="object" data="subidas/{{id}}_2.jpg?fai={{fechaImagenFoto}}" width="70">
+			<img  onclick="changeImage(this)"  src="subidas/imagen_defecto.jpg" width="70"/>		
+</object></li>	
+	</ul>	</div>	</div>	
+	</div>	
+	 
+	<div class="col-md-6">	
+	<div class="p-3 right-side">	
+	<div class="d-flex justify-content-between align-items-center">	
+	<h1 style="color:#ee9f9f; font-size:25px;" >{{nombre}}</h1>	<span class="heart"><i class='bx bx-heart '></i></span>	
+	</div>	
+	<div class="mt-2 pr-3 content">	<p></p>	</div>	
+	<h2 style="font-size:25px; color:black;">{{precio}} €</h2>	
+	<div class="ratings d-flex flex-row align-items-center" style="margin-top:20px;">	
+	<div class="d-flex flex-row">	
+	<i class='bx bxs-star iconos' ></i>
+	<i class='bx bxs-star iconos' ></i>	
+	<i class='bx bxs-star iconos' ></i>	
+	<i class='bx bxs-star iconos'  ></i>	
+	<i class='bx bx-star iconos' ></i>	
+	</div>	
+	<span style="margin-top:3px;">441 reseñas</span>	</div>	
+	<div class="mt-5">	<b style="font-size:16px;">Talla</b>	
+	<div class="colors">	
+	<ul id="marker">
+	<li id="marker-1" class="talla"><a class="botonCheck">XS</a></li>	
+	<li id="marker-2" class="talla"><a class="botonCheck">S</a></li>	
+	<li id="marker-3" class="talla"><a class="botonCheck">M</a></li>	
+	<li id="marker-4" class="talla"><a class="botonCheck">L</a></li>	
+	<li id="marker-5" class="talla"><a class="botonCheck">XL</a></li>	</ul>	
+
+	</div>	
+	</div>	
+	<div class="mt-5">	<b style="font-size:16px;">Detalles </b>	
+	  <p class="texto"><b>Color:</b>  {{color}}</p>	
+	  <p class="texto"><b>Marca:</b>  {{marca}}</p>	
+	  <p class="texto"><b>Material:</b>  {{material}}</p>	
+	  <p class="texto"><b>Peso:</b>  {{peso}} gramos</p>	
+	  <p class="texto"><b>Categoría:</b>  {{categoria.nombre}}</p>
+	  <p class="texto"><b>Cantidad:</b> <input type="number" id="input-cantidad-{{id}}" value="1" style="padding:5px;" min="1" max="20"></p>
+	</div>
+	<div class="buttons d-flex flex-row mt-5 gap-3">	
+	<button class="btn enlace_comprar" href="#" id_producto="{{id}} ">Añadir al carrito</button>	
+		</div>	
+  </div>
+  {{/.}}
+ </div>	
+</div>	
+
+</div>
+ </div>
+
+
+</body>
+<script type="text/javascript" src="javascript/detalles.js"></script>
+</html>
